@@ -1,0 +1,3 @@
+[submodule "components/core-header-panel"]
+	path = components/core-header-panel
+	url = https://github.com/Polymer/core-header-panel.git
