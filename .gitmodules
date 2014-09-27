@@ -4,3 +4,9 @@
 [submodule "components/paper-button"]
 	path = components/paper-button
 	url = https://github.com/Polymer/paper-button.git
+[submodule "component/platform"]
+	path = component/platform
+	url = https://github.com/Polymer/platform.git
+[submodule "platform.js"]
+	path = platform.js
+	url = https://github.com/Polymer/platform.git
