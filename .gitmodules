@@ -10,3 +10,9 @@
 [submodule "platform.js"]
 	path = platform.js
 	url = https://github.com/Polymer/platform.git
+[submodule "core-icon-button/core-icon-button.html"]
+	path = core-icon-button/core-icon-button.html
+	url = https://github.com/Polymer/core-icon-button
+[submodule "core-toolbar/core-toolbar.html"]
+	path = core-toolbar/core-toolbar.html
+	url = https://github.com/Polymer/core-toolbar
