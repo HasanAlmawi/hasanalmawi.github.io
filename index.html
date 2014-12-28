@@ -1,23 +1,23 @@
 <html>
-  <head> 
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png"> 
+    <!-- Imports -->
     <script src="/webcomponentsjs/webcomponents.js"> </script>
     <link rel="import" href="/core-toolbar/core-toolbar.html">
     <link rel="import" href="/core-header-panel/core-header-panel.html">
     <link rel="import" href="/core-icons/core-icons.html">
     <link rel="import" href="/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="/core-icon-button/core-icon-button.html">
+    <link rel="import" href="/core-image/core-image.html">
   </head>
-<!-- use fullbleed attribute to specify 
-     the body should fill the viewport -->
+  <!-- HTML -->
   <body fullbleed vertical layout unresolved>
-    <core-header-panel flex>
-      <core-toolbar id="mainheader">
-        <paper-icon-button id="navicon" icon="arrow-back"></paper-icon-button>
-        <span flex>Title</span>
-        <paper-icon-button id="searchbutton" icon="search"></paper-icon-button>
+    <core-header-panel flex mode="waterfall-tall">
+      <core-toolbar id="mainheader" class="animate tall">
+        <core-image style="width:400px;height=400px"src="http://goo.gl/gVDgMk" sizing="contain"> </core-image>
       </core-toolbar>
-      <p>Sample content.</p>
-      <p>Sample content.</p>
     </core-header-panel>
+    <!-- CSS -->
     <style type="text/css">
       body {
         font-family: sans-serif;
