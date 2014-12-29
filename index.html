@@ -1,5 +1,6 @@
 <html>
   <head profile="http://www.w3.org/2005/10/profile">
+    <title>Hasan Almawi</title>
     <link rel="icon" type="image/png" href="http://example.com/myicon.png"> 
     <!-- Imports -->
     <script src="/webcomponentsjs/webcomponents.js"> </script>
@@ -11,24 +12,33 @@
     <core-scroll-header-panel keepCondensedHeader headerHeight="4">
       <core-toolbar class="tall">
       </core-toolbar>
-    </core-scroll-header-panel>
-    <!-- About Me -->
-    <div>
+       <!-- About Me -->
+    <div class="content">
     </div>
     <!-- GitHub -->
-    <div>
+    <div class="content">
     </div>
+    </core-scroll-header-panel>
+   
     <!-- CSS -->
     <style type="text/css">
       html, body {
         height: 100%;
         margin: 0;
       }
-      core-scroll-header-panel {
-        height: 100%;
+      core-scroll-header-panel{
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background-color:#C6C5CA;
+      }
+      core-scroll-header-panel::shadow #headerBg{
         background: url(http://goo.gl/gVDgMk) no-repeat;
-        max-width:100%;
-        max-height:100%;
+      }
+      core-scroll-header-panel::shadow #condensedHeaderBg{
+        background-color:#C6C5CA;
       }
     </style>
   </body>
