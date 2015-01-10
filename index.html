@@ -10,88 +10,99 @@
     <body>
         <core-toolbar id="core_toolbar"></core-toolbar>
         <div id="container">
-            <paper-input label="Password" floatinglabel id="paper_input1"></paper-input>
-            <paper-checkbox label="Remember Me" id="paper_checkbox"></paper-checkbox>
-            <paper-input label="Username" floatinglabel id="paper_input"></paper-input>
-            <paper-button raised id="paper_button">Sign In</paper-button>
-            <paper-input label="Last Name" floatinglabel id="paper_input3"></paper-input>
-            <paper-input label="First Name" floatinglabel id="paper_input2"></paper-input>
-            <paper-input label="Password" floatinglabel id="paper_input5"></paper-input>
-            <paper-input label="Email" floatinglabel id="paper_input4"></paper-input>
-            <paper-button raised id="paper_button1">Sign Up</paper-button>
+            <paper-input label="Email" floatinglabel id="emailIn"></paper-input>
+            <paper-input label="Password" floatinglabel id="passIn"></paper-input>
+            <paper-checkbox label="Remember Me" id="rememberMe"></paper-checkbox>
+            <paper-button raised id="signInB">Sign In</paper-button>
+            <hr>
+            <paper-input label="First Name" floatinglabel id="firstNameUp"></paper-input>
+            <paper-input label="Last Name" floatinglabel id="lastNameUp"></paper-input>
+            <paper-input label="Email" floatinglabel id="emailUp"></paper-input>
+            <paper-input label="Password" floatinglabel id="passwordUp"></paper-input>
+            <paper-button raised id="signUpB">Sign Up</paper-button>
         </div>
         <style>
+        hr{
+            size: 100px;
+        }
         #container{
-            position: relative;
+            position: absolute;
             font-family: 'Source Sans Pro', sans-serif;
-            left: 20%;
+            left: 60%;
+            right: 10%;
             top: 40%;
+            bottom: 30%;
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
             border-radius: 20px;
             background-color:#C4C4C4;
         }
-          :host {
+        :host {
             position: absolute;
             width: 100%;
             height: 100%;
             box-sizing: border-box;
           }
-          #core_toolbar {
-            right: 0px;
-            left: 0px;
+          #core_toolbar{
+            right: 0%;
+            left: 0%;
             color: rgb(255, 255, 255);
             fill: rgb(255, 255, 255);
-            top: 0px;
+            top: 0%;
             position: absolute;
             background-color: rgb(98, 5, 218);
           }
-          #paper_input {
-            left: 960px;
-            top: 190px;
+          #emailIn{
+            top: 5%;
+            left: 10%;
+            right: 10%;
             position: absolute;
             background-color: rgb(255, 255, 255);
           }
-          #paper_input1 {
-            left: 960px;
-            top: 240px;
+          #passIn{
+            top: 5%;
+            left: 10%;
+            right: 10%;
             position: absolute;
           }
-          #paper_button {
-            left: 1080px;
-            top: 290px;
+          #signInB{
+            right: 10%;
             position: absolute;
             background-color: rgb(86, 8, 149);
           }
-          #paper_input2 {
-            left: 960px;
-            top: 330px;
+          #firstNameUp{
+            top: 5%;
+            left: 10%;
+            right: 10%;
             position: absolute;
           }
-          #paper_input3 {
-            left: 960px;
-            top: 370px;
+          #lastNameUp{
+            top: 5%;
+            left: 10%;
+            right: 10%;
             position: absolute;
           }
-          #paper_input4 {
-            left: 960px;
-            top: 410px;
+          #emailUp{
+            top: 5%;
+            left: 10%;
+            right: 10%;
             position: absolute;
           }
-          #paper_input5 {
-            left: 960px;
-            top: 460px;
+          #passwordUp{
+            top: 5%;
+            left: 10%;
+            right: 10%;
             position: absolute;
           }
-          #paper_button1 {
-            left: 1090px;
-            top: 520px;
+          #signUpB{
+            top: 5%;
+            right: 10%;
             position: absolute;
             background-color: rgb(204, 208, 26);
           }
-          #paper_checkbox {
-            left: 960px;
-            top: 290px;
+          #rememberMe{
+            top: 5%;
+            left: 10%;
             position: absolute;
           }
         </style>
