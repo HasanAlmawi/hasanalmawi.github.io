@@ -1,90 +1,87 @@
 <html>
-  <head>
-    <link rel="shortcut icon" href="http://faviconist.com/icons/722eebbed156c14149bf1c5bfaed4b33/favicon.ico" />
-    <!-- Imports -->
-    <script src="/webcomponentsjs/webcomponents.js"> </script>
-    <link rel="import" href="/core-header-panel/core-header-panel.html">
-    <link rel="import" href="/core-toolbar/core-toolbar.html">
-    <link rel="import" href="/core-icon-button/core-icon-button.html">
-    <link rel="import" href="/core-icons/core-icons.html">
-    <link rel="import" href="/core-icon/core-icon.html">
-    <title>Hasan Almawi</title>
-  </head>
-  <!-- HTML -->
-  <body fullbleed layout vertical>
-    <core-header-panel mode="waterfall-tall" id="core_header_panel">
-      <core-toolbar id="core_toolbar" class="animate tall">
-        <a href="https://github.com/HasanAlmawi/"><core-icon src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-128.png" icon="search" id="core_icon3"></core-icon></a>
-        <a href="https://twitter.com/HasanAlmawi"><core-icon src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/twitter-4096-black.png" id="core_icon1"></core-icon></a>
-        <a href="https://www.linkedin.com/in/hasanalmawi"><core-icon src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png" id="core_icon"></core-icon></a>
-      </core-toolbar>
-      <section id="section">
-        <!-- About Me -->
-        <div vertical layout id="aboutMe">
-          <div flex self-start>
-          </div>
-          <div flex self-stretch></div>
-        </div>
-        <!-- Portfolio -->
-        <div verical layout id="projects">
-          <div></div>
-        </div>
-        <!-- Contact -->
-        <div vertical layout id="contact">
-          <div></div>
-        </div>
-      </section>
-    </core-header-panel>
-    <!-- CSS -->
-    <style type="text/css">
-      :host {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
-      }
-      #contact{
-        height: 20%;
-        background: #747279;
-      }
-      #aboutMe{
-        height: 40%;
-        background: #FFFFFF;
-      }
-      #projects{
-        height: 40%;
-        background: #B4B4B5;
-      }
-      #core_header_panel {
-        width: 100%;
-        height: 100%;
-        left: 0px;
-        top: 0px;
-        position: absolute;
-      }
-      #core_toolbar {
-        color: rgb(255, 255, 255);
-        background: url(http://i.imgur.com/n87Sn62.jpg);
-      }
-      #section {
-        height: 1000px;
-        background: linear-gradient(rgb(214, 227, 231), rgb(173, 216, 230));
-      }
-      #core_icon {
-        left: 978px;
-        top: 10px;
-        position: absolute;
-      }
-      #core_icon1 {
-        left: 1018px;
-        top: 10px;
-        position: absolute;
-      }
-      #core_icon3 {
-        left: 1058px;
-        top: 10px;
-        position: absolute;
-      }
-    </style>
-  </body>
+    <head>
+        <link rel="import" href="/core-icon-button/core-icon-button.html">
+        <link rel="import" href="/core-toolbar/core-toolbar.html">
+        <link rel="import" href="/paper-input/paper-input.html">
+        <link rel="import" href="/paper-checkbox/paper-checkbox.html">
+        <link rel="import" href="/paper-button/paper-button.html">
+    </head>
+    <body>
+        <core-toolbar id="core_toolbar">
+        </core-toolbar>
+        <paper-input label="Password" floatinglabel id="paper_input1"></paper-input>
+        <paper-checkbox label="Remember Me" id="paper_checkbox"></paper-checkbox>
+        <paper-input label="Username" floatinglabel id="paper_input"></paper-input>
+        <paper-button raised id="paper_button">Sign In</paper-button>
+        <paper-input label="Last Name" floatinglabel id="paper_input3"></paper-input>
+        <paper-input label="First Name" floatinglabel id="paper_input2"></paper-input>
+        <paper-input label="Password" floatinglabel id="paper_input5"></paper-input>
+        <paper-input label="Email" floatinglabel id="paper_input4"></paper-input>
+        <paper-button raised id="paper_button1">Sign Up</paper-button>
+        <style>    
+          :host {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+          }
+          #core_toolbar {
+            right: 0px;
+            left: 0px;
+            color: rgb(255, 255, 255);
+            fill: rgb(255, 255, 255);
+            top: 0px;
+            position: absolute;
+            background-color: rgb(98, 5, 218);
+          }
+          #paper_input {
+            left: 960px;
+            top: 190px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+          }
+          #paper_input1 {
+            left: 960px;
+            top: 240px;
+            position: absolute;
+          }
+          #paper_button {
+            left: 1080px;
+            top: 290px;
+            position: absolute;
+            background-color: rgb(86, 8, 149);
+          }
+          #paper_input2 {
+            left: 960px;
+            top: 330px;
+            position: absolute;
+          }
+          #paper_input3 {
+            left: 960px;
+            top: 370px;
+            position: absolute;
+          }
+          #paper_input4 {
+            left: 960px;
+            top: 410px;
+            position: absolute;
+          }
+          #paper_input5 {
+            left: 960px;
+            top: 460px;
+            position: absolute;
+          }
+          #paper_button1 {
+            left: 1090px;
+            top: 520px;
+            position: absolute;
+            background-color: rgb(204, 208, 26);
+          }
+          #paper_checkbox {
+            left: 960px;
+            top: 290px;
+            position: absolute;
+          }
+        </style>
+    </body>
 </html>
