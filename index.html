@@ -10,8 +10,8 @@
     <body>
         <core-toolbar id="core_toolbar"></core-toolbar>
         <div vertical layout id="pics">
-            <div flex><img src="http://i.imgur.com/Zzg7EEI.jpg"></div>
-            <div flex><img src="http://i.imgur.com/0xKoqLz.jpg"></div>
+            <div flex id="img1"><img src="http://i.imgur.com/Zzg7EEI.jpg"></div>
+            <div flex id="img2"><img src="http://i.imgur.com/0xKoqLz.jpg"></div>
         </div>
         <div vertical layout id="container">
             <div flex><paper-input label="Email" floatinglabel id="emailIn"></paper-input></div>
@@ -28,7 +28,10 @@
         #pics{
             position: absolute;
             top: 20%;
-            left: 5%;
+            left: 15%;
+        }
+        #img2{
+            top: 5%;   
         }
         #container{
             position: absolute;
