@@ -5,20 +5,32 @@
         <link rel="import" href="/paper-input/paper-input.html">
         <link rel="import" href="/paper-checkbox/paper-checkbox.html">
         <link rel="import" href="/paper-button/paper-button.html">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <core-toolbar id="core_toolbar">
-        </core-toolbar>
-        <paper-input label="Password" floatinglabel id="paper_input1"></paper-input>
-        <paper-checkbox label="Remember Me" id="paper_checkbox"></paper-checkbox>
-        <paper-input label="Username" floatinglabel id="paper_input"></paper-input>
-        <paper-button raised id="paper_button">Sign In</paper-button>
-        <paper-input label="Last Name" floatinglabel id="paper_input3"></paper-input>
-        <paper-input label="First Name" floatinglabel id="paper_input2"></paper-input>
-        <paper-input label="Password" floatinglabel id="paper_input5"></paper-input>
-        <paper-input label="Email" floatinglabel id="paper_input4"></paper-input>
-        <paper-button raised id="paper_button1">Sign Up</paper-button>
-        <style>    
+        <core-toolbar id="core_toolbar"></core-toolbar>
+        <div id="container">
+            <paper-input label="Password" floatinglabel id="paper_input1"></paper-input>
+            <paper-checkbox label="Remember Me" id="paper_checkbox"></paper-checkbox>
+            <paper-input label="Username" floatinglabel id="paper_input"></paper-input>
+            <paper-button raised id="paper_button">Sign In</paper-button>
+            <paper-input label="Last Name" floatinglabel id="paper_input3"></paper-input>
+            <paper-input label="First Name" floatinglabel id="paper_input2"></paper-input>
+            <paper-input label="Password" floatinglabel id="paper_input5"></paper-input>
+            <paper-input label="Email" floatinglabel id="paper_input4"></paper-input>
+            <paper-button raised id="paper_button1">Sign Up</paper-button>
+        </div>
+        <style>
+        #container{
+            position: relative;
+            font-family: 'Source Sans Pro', sans-serif;
+            left: 20%;
+            top: 40%;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            background-color:#C4C4C4;
+        }
           :host {
             position: absolute;
             width: 100%;
