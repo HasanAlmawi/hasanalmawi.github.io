@@ -1,38 +1,15 @@
 <html>
-  <head>
-    <link rel="import" href="../core-icon-button/core-icon-button.html">
-    <link rel="import" href="../core-toolbar/core-toolbar.html">
-    <link rel="import" href="../core-icons/core-icons.html">
-    <link rel="import" href="../paper-icon-button/paper-icon-button.html">
-    <link rel="import" href="../paper-tabs/paper-tabs.html">
-    <link rel="import" href="../paper-tabs/paper-tab.html">
-    <link rel="import" href="../paper-button/paper-button.html">
-    <link rel="import" href="../paper-input/paper-input.html">
-    <link rel="import" href="../paper-radio-button/paper-radio-button.html">
-    <link rel="import" href="../paper-item/paper-item.html">
-  </head>
-  <body>
-    <core-toolbar id="core_toolbar">
-      <paper-icon-button icon="home" id="paper_icon_button"></paper-icon-button>
-      <paper-icon-button icon="history" id="paper_icon_button1"></paper-icon-button>
-      <paper-icon-button icon="settings" id="paper_icon_button2"></paper-icon-button>
-      <paper-icon-button icon="settings-power" id="paper_icon_button3"></paper-icon-button>
-    </core-toolbar>
-    <paper-tabs selected="1" selectedindex="1" id="paper_tabs" horizontal center layout center-justified>
-      <paper-tab noink id="paper_tab" inline flex center-center horizontal layout>Account</paper-tab>
-      <paper-tab noink id="paper_tab1" inline flex center-center horizontal layout active>Notification</paper-tab>
-    </paper-tabs>
-    <paper-button raised id="paper_button">Save Changes</paper-button>
-    <paper-input label="Days" floatinglabel id="paper_input3"></paper-input>
-    <paper-input label="Hours" floatinglabel id="paper_input4"></paper-input>
-    <paper-input label="Minutes" floatinglabel id="paper_input5"></paper-input>
-    <paper-input label="Amount of Lectures" floatinglabel id="paper_input2"></paper-input>
-    <paper-radio-button label="Lectures Accumulated" toggles id="paper_radio_button1"></paper-radio-button>
-    <paper-input label="Minutes" floatinglabel id="paper_input1"></paper-input>
-    <paper-input label="Hours" floatinglabel id="paper_input"></paper-input>
-    <paper-radio-button label="Time Accumulated" toggles id="paper_radio_button"></paper-radio-button>
-    <paper-item raised id="paper_item" icon="settings" label="Item">After Lecture</paper-item>
-    <paper-item raised id="paper_item1" icon="settings" label="Item">Before Lecture</paper-item>
+<head>
+  <link rel="import" href="/core-icon-button/core-icon-button.html">
+  <link rel="import" href="/core-toolbar/core-toolbar.html">
+  <link rel="import" href="/core-icons/core-icons.html">
+  <link rel="import" href="/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="/paper-input/paper-input.html">
+  <link rel="import" href="/paper-button/paper-button.html">
+  <link rel="import" href="/paper-tabs/paper-tabs.html">
+  <link rel="import" href="/paper-tabs/paper-tab.html">
+</head>
+<body>
     <style>    
       :host {
         position: absolute;
@@ -84,62 +61,53 @@
       #paper_tab {
         background-color: rgb(106, 24, 145);
       }
-      #paper_button {
-        left: 650px;
-        top: 510px;
-        position: absolute;
-        background-color: rgb(221, 196, 27);
-      }
-      #paper_radio_button {
-        left: 580px;
-        top: 280px;
-        position: absolute;
-      }
-      #paper_radio_button1 {
-        left: 580px;
-        top: 410px;
-        position: absolute;
-      }
       #paper_input {
-        left: 580px;
-        top: 300px;
+        left: 310px;
+        top: 230px;
         position: absolute;
       }
       #paper_input1 {
-        left: 580px;
-        top: 350px;
+        left: 310px;
+        top: 290px;
         position: absolute;
       }
       #paper_input2 {
-        left: 580px;
-        top: 440px;
+        left: 310px;
+        top: 340px;
         position: absolute;
       }
       #paper_input3 {
-        left: 340px;
-        top: 260px;
-        position: absolute;
-      }
-      #paper_input4 {
-        left: 340px;
-        top: 320px;
-        position: absolute;
-      }
-      #paper_input5 {
-        left: 340px;
+        left: 310px;
         top: 390px;
         position: absolute;
       }
-      #paper_item {
-        left: 600px;
-        top: 220px;
+      #paper_input4 {
+        left: 310px;
+        top: 440px;
         position: absolute;
       }
-      #paper_item1 {
-        left: 350px;
-        top: 220px;
+      #paper_button {
+        left: 600px;
+        top: 460px;
         position: absolute;
+        background-color: rgb(221, 196, 27);
       }
     </style>
-  </body>
+    <core-toolbar id="core_toolbar">
+      <paper-icon-button icon="home" id="paper_icon_button"></paper-icon-button>
+      <paper-icon-button icon="history" id="paper_icon_button1"></paper-icon-button>
+      <paper-icon-button icon="settings" id="paper_icon_button2"></paper-icon-button>
+      <paper-icon-button icon="settings-power" id="paper_icon_button3"></paper-icon-button>
+    </core-toolbar>
+    <paper-input label="First Name" floatinglabel id="paper_input"></paper-input>
+    <paper-input label="Last Name" floatinglabel id="paper_input1"></paper-input>
+    <paper-button raised id="paper_button">Save Changes</paper-button>
+    <paper-input label="Email" floatinglabel id="paper_input2"></paper-input>
+    <paper-input label="Old Password" floatinglabel id="paper_input3"></paper-input>
+    <paper-input label="New Password" floatinglabel id="paper_input4"></paper-input>
+    <paper-tabs selected="0" selectedindex="0" id="paper_tabs" horizontal center layout center-justified>
+      <paper-tab noink id="paper_tab" inline flex center-center horizontal layout active>Account</paper-tab>
+      <paper-tab noink id="paper_tab1" inline flex center-center horizontal layout>Notification</paper-tab>
+    </paper-tabs>
+</body>
 </html>
